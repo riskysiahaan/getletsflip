@@ -13,27 +13,36 @@
 
     <!-- Navbar -->
 
+    <!-- 
+        <div class="container mobile-flex">
+            <nav class="nav-group">
+            </nav>
+        </div>
+     -->
+
     <div class="navbar">
-        <div class="container">
+        <div class="navbar-item">
             <a class="logo" href="#">
                 <img src="img/logo.png" alt="" class="logo flex-row">
             </a>
-            <nav class="nav-group">
-                <ul>
-                    <li class="nav-item active"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="privateclassroom.html">Private Classroom</a></li>
-                    <li class="nav-item"><a href="masterclassroom.html">Master Classroom</a></li>
-                    <li class="nav-item"><a href="#">Meet The Team</a></li>
-                    <li class="nav-item"><a href="#">Rewards</a></li>
-                    <li class="nav-item"><a href="#">Partners</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </ul>
-            </nav>
+        </div>
+        <div class="navbar-item">
+            <ul>
+                <li class="nav-item active"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="privateclassroom.html">Private Classroom</a></li>
+                <li class="nav-item"><a href="masterclassroom.html">Master Classroom</a></li>
+                <li class="nav-item"><a href="meettheteam.html">Meet The Team</a></li>
+                <li class="nav-item"><a href="#">Rewards</a></li>
+                <li class="nav-item"><a href="#">Partners</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-item hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="navbar-item">
             <a href="https://play.google.com/store/apps/details?id=com.lets_flip">
                 <button class="flex-row">Download Now</button>
             </a>
@@ -44,37 +53,45 @@
 
     <!-- Header -->
 
-    <div class="header">
-        <div class="container flex">
-            <h1 class="flex-item">TURN THE WORLD INTO YOUR CLASSROOM & LET YOUR VOICES BE HEARD</h1>
-            <p class="flex-item">Scroll through the hallways of Let’s Fl!p while learning beyond the walls of a classroom</p>
-            <div class="ios-download-button">
-                <a href="#">Download on the Appstore</a>
+    <div class="header container">
+        <div class="header-flex">
+            <h1 class="header-item">TURN THE WORLD INTO YOUR CLASSROOM & LET YOUR VOICES BE HEARD</h1>
+            <p class="header-item">Scroll through the hallways of Let’s Fl!p while learning beyond the walls of a classroom</p>
+            <div class="header-item header-item-split">
+                <div class="ios-download-button item-split">
+                    <a href="#">Download on the Appstore</a>
+                </div>
+                <div class="android-download-button item-split">
+                    <a href="https://play.google.com/store/apps/details?id=com.lets_flip">Download on the Playstore</a>
+                </div>
             </div>
-            <div class="android-download-button">
-                <a href="https://play.google.com/store/apps/details?id=com.lets_flip">Download on the Playstore</a>
+            <div class="header-item">
+                <img src="img/phone-header.png" alt="Phone Image">
             </div>
         </div>
     </div>
-    <div class="header-image">
-        <img src="img/header-background.png" alt="Header Background">
-    </div>
-    <div class="phone-image">
-        <img src="img/phone-header.png" alt="Phone Image">
-    </div>
+    
 
     <!-- End Header -->
 
     <!-- App Image -->
 
-   <div class="app-image">
-       <div class="phone-center">
-            <img src="img/iphone-center.png" alt="" class="">
+   <div class="container app-image">
+       <div class="app-image-item">
+            <img src="img/arrow-left.png" alt="">
        </div>
-        <img src="img/arrow-left.png" alt="" class="arrow-left">
-        <img src="img/iphone-left.png" alt="" class="phone-left">
-        <img src="img/iphone-right.png" alt="" class="phone-right">
-        <img src="img/arrow-right.png" alt="" class="arrow-right">
+       <div class="app-image-item">
+           <img src="img/iphone-left.png" alt="">
+        </div>
+        <div class="app-image-item">
+             <img src="img/iphone-center.png" alt="">
+        </div>
+       <div class="app-image-item">
+            <img src="img/iphone-right.png" alt="">
+       </div>
+       <div class="app-image-item">
+            <img src="img/arrow-right.png" alt="">
+       </div>
    </div>
 
     <!-- End App Image -->
@@ -83,41 +100,59 @@
     <!-- World's First -->
 
     <div class="world-first">
-        <h1>
-            THE WORLD’S FIRST AUTHENTIC MOBILE LEARNING APP
-        </h1>
-        <p>
-            It is all about you in Let’s Flip! Your mission is to come up with the most accurate, creative and innovative responses and solutions to the questions posted by the world out there. Look up and look at the world. There are classrooms everywhere.
-        </p>
-        <a href="">
-            <button>Learn More</button>
-        </a>
-        <img src="img/world-first-phone.png" alt="">
+        <div class="world-first-item-row">
+            <div class="world-first-row-1">
+                <h1>
+                    THE WORLD’S FIRST AUTHENTIC MOBILE LEARNING APP
+                </h1>
+            </div>
+            <div class="world-first-row-2">
+                <p>
+                    It is all about you in Let’s Flip! Your mission is to come up with the most accurate, creative and innovative responses and solutions to the questions posted by the world out there. Look up and look at the world. There are classrooms everywhere.
+                </p>
+            </div>
+            <div class="world-first-row-3">
+                <a href="">
+                    <button>Learn More</button>
+                </a>
+            </div>
+        </div>
+        <div class="world-first-item-row">
+            <img src="img/world-first-phone.png" alt="">
+        </div>
     </div>
 
     <!-- End World's First -->
 
     <!-- Ask a Question -->
 
-    <div class="ask-a-question">
-        <div class="background-ask-a-question">
+    <div class="container ask-a-question">
+        <div class="ask-a-question-item-row">
             <img src="img/Vector.png" alt="">
+            <img class="vector-a-question" src="img/Group 55.png" alt="">
         </div>
-        <img class="vector-a-question" src="img/Group 55.png" alt="">
-        <h1>
-            ASK A QUESTION
-        </h1>
-        <p>
-            Create and ask question-based missions about any topics you are interested in or use it as a safe space to let your voices be heard.
-        </p>
-        <p class="second-paragraph">
-            Receive unique responses, challenge and beat the leaderboard in Classrooms against other users’ missions from around the world.
-        </p>
-        <a href="">
-            <button>
-                Learn More
-            </button>
-        </a>
+        <div class="ask-a-question-item-row">
+            <div class="ask-a-question-col-1">
+                <h1>
+                    ASK A QUESTION
+                </h1>
+            </div>
+            <div class="ask-a-question-col-2">
+                <p>
+                    Create and ask question-based missions about any topics you are interested in or use it as a safe space to let your voices be heard.
+                </p>
+                <p>
+                    Receive unique responses, challenge and beat the leaderboard in Classrooms against other users’ missions from around the world.
+                </p>
+            </div>
+            <div class="ask-a-question-col-3 align-end">
+                <a href="">
+                    <button>
+                        Learn More
+                    </button>
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- Ask a Question end -->
@@ -125,23 +160,29 @@
 
     <!-- Join Classroom -->
 
-    <div class="join-classroom">
-        <h1>
-            JOIN CLASSROOMS
-        </h1>
-        <p>
-            Respond to your chosen classrooms or create your own! Missions will be placed into a Classroom, which means a category. 
-            You will challenge users to respond through a video that will be 90 seconds or less. Video is used so that you will be able 
-            to do interactive visual learning  instead of only reading.
-        </p>
-        <div class="image-2">
-            <img src="img/join-classroom-2.png" alt="">
+    <div class="join-classroom cover">
+        <div class="jcc-item-col">
+            <h1>
+                JOIN CLASSROOMS
+            </h1>
         </div>
-        <div class="image-1">
-            <img src="img/join-classroom-1.png" alt="">
+        <div class="jcc-item-col">
+            <p>
+                Respond to your chosen classrooms or create your own! Missions will be placed into a Classroom, which means a category. 
+                You will challenge users to respond through a video that will be 90 seconds or less. Video is used so that you will be able 
+                to do interactive visual learning  instead of only reading.
+            </p>
         </div>
-        <div class="image-3">
-            <img src="img/join-classroom-3.png" alt="">
+        <div class="jcc-item-col jcc-row">
+            <div class="image-2">
+                <img src="img/join-classroom-2.png" alt="">
+            </div>
+            <div class="image-1">
+                <img src="img/join-classroom-1.png" alt="">
+            </div>
+            <div class="image-3">
+                <img src="img/join-classroom-3.png" alt="">
+            </div>
         </div>
     </div>    
 
@@ -150,12 +191,14 @@
 
     <!-- Build a Community -->
 
-    <div class="build-community">
-        <div class="content-build-community">
+    <div class="build-community build-community-cover">
+        <div class="build-community-item">
             <h1>
                 BUILD A
                 COMMUNITY
             </h1>
+        </div>
+        <div class="build-community-item">
             <p>
                 Find like minded people that share the same interests while advocating for each other in the learning process. 
                 A space to connect students and educators around the world through learning.
@@ -168,7 +211,7 @@
 
     <!-- Image -->
 
-    <div class="image">
+    <div class="image-cover image">
         <img src="img/people.png" alt="">
     </div> 
 
@@ -177,42 +220,58 @@
 
     <!-- Footer -->
 
-    <div class="footer">
-        <div class="have-fun">
-            <h1>
-                HAVE FUN !
-            </h1>
-        </div>
-        <div class="make-learning">
-            <p>
-                Make your learning experience exciting, simple and convenient whatever your age may be or wherever you may be. 
-                After 7 years of research, data, trials and tribulations, we present to you the Classroom Without Walls. 
-                Let’s Flip!
-            </p>
-        </div>
-        <div class="button-learn-more">
-            <a href="">
-                <button>
-                    Learn More!
-                </button>
-            </a>
-        </div>
-        <div class="icon-footer">
-            <div class="instagram">
-                <img src="img/icon/instagram-icon.png" alt="">
-                <a href="">@Letsflip.sg</a>
+    <div class="footer-cover footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="have-fun">
+                    <h1>
+                        HAVE FUN !
+                    </h1>
+                </div>
             </div>
-            <div class="linkedin">
-                <img src="img/icon/linkedin-icon.png" alt="">
-                <a href="">Score Campus</a>
+            <div class="footer-col">
+                <div class="make-learning">
+                    <p>
+                        Make your learning experience exciting, simple and convenient whatever your age may be or wherever you may be. 
+                        After 7 years of research, data, trials and tribulations, we present to you the Classroom Without Walls. 
+                        Let’s Flip!
+                    </p>
+                </div>
             </div>
-            <div class="facebook">
-                <img src="img/icon/facebook-icon.png" alt="">
-                <a href="">@Scorecampus</a>
+            <div class="footer-col">
+                <div class="button-learn-more">
+                    <a href="">
+                        <button>
+                            Learn More!
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-item">
+                    <div class="instagram">
+                        <img src="img/icon/instagram-icon.png" alt="">
+                        <a href="">@Letsflip.sg</a>
+                    </div>
+                </div>
+                <div class="footer-col-item">
+                    <div class="linkedin">
+                        <img src="img/icon/linkedin-icon.png" alt="">
+                        <a href="">Score Campus</a>
+                    </div>
+                </div>
+                <div class="footer-col-item">
+                    <div class="facebook">
+                        <img src="img/icon/facebook-icon.png" alt="">
+                        <a href="">@Scorecampus</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="barcode">
-            <img src="img/qrcode.png" alt="">
+        <div class="footer-row">
+            <div class="barcode">
+                <img src="img/qrcode.png" alt="">
+            </div>
         </div>
     </div>
 
