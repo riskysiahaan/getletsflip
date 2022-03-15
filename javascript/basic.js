@@ -1,9 +1,15 @@
-const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-item");
-
-        hamburger.addEventListener("click", mobileMenu);
-
-        function mobileMenu() {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-        }
+document.addEventListener('touchmove', function(event) {
+    event = event.originalEvent || event;
+    if(event.scale > 1) {
+      event.preventDefault();
+    }
+  }, false);
+  
+  
+  if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+  window.document.addEventListener('touchmove', e => {
+    if(e.scale !== 1) {
+      e.preventDefault();
+    }
+  }, {passive: false});
+}

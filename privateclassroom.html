@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="icon" href="img/logo.png">
     <title>Private Classroom</title>
 </head>
 <body>
@@ -13,47 +14,44 @@
     <!-- Navbar -->
 
     <div class="navbar">
-        <div class="navbar-item">
-            <a class="logo" href="#">
-                <img src="img/logo.png" alt="" class="logo flex-row">
-            </a>
-        </div>
-        <div class="navbar-item">
-            <ul>
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item active"><a href="privateclassroom.html">Private Classroom</a></li>
-                <li class="nav-item"><a href="masterclassroom.html">Master Classroom</a></li>
-                <li class="nav-item"><a href="meettheteam.html">Meet The Team</a></li>
-                <li class="nav-item"><a href="#">Rewards</a></li>
-                <li class="nav-item"><a href="#">Partners</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="nav-item hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <div class="navbar-item">
-            <a href="https://play.google.com/store/apps/details?id=com.lets_flip">
-                <button class="flex-row">Download Now</button>
-            </a>
-        </div>
+        <a href="" class="logo"><img src="img/logo.png" alt=""></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="privateclassroom.html">Private Classroom</a></li>
+            <li><a href="masterclassroom.html">Master Classroom</a></li>
+            <li><a href="#">Meet The Team</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href=""><button>Download Now</button></a></li> 
+        </ul>
     </div>
 
     <!-- End Navbar -->
 
     <!-- Header -->
 
-    <div class="pv-header">
-        <h1>PRIVATE CLASSROOM</h1>
-        <p>Your exclusive space to create missions and grade your invitees.</p>
-        <img src="img/pv-header.png" alt="">
-        <div class="download">
-            <a href="">Download Now</a>
+    <div class="pc-header">
+        <div class="pc-header-row pc-header-left">
+            <div class="pc-header-col">
+                <h1>PRIVATE CLASSROOM</h1>
+            </div>
+            <div class="pc-header-col">
+                <p>Your exclusive space to create missions and grade your invitees.</p>
+            </div>
+            <div class="pc-header-col pc-header-two-button">
+                <div class="download">
+                    <a href="">Download Now</a>
+                </div>
+                <div class="upgrade-button">
+                    <a href="">Upgrade Now</a>
+                </div>
+            </div>
         </div>
-        <div class="upgrade">
-            <a href="">Upgrade Now</a>
+        <div class="pc-header-row pc-img">
+            <div class="pc-header-col">
+                <img class="right-header-phone" src="img/pv-header-phone.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -62,41 +60,52 @@
     <!-- How it works -->
 
     <div class="how-it-works">
-        <img class="how-it-works-phone" src="img/pv-header-phone.png" alt="">
-        <img src="img/hiw-vector-1.png" alt="" class="hiw-vector-1">
-        <div class="hiw-text">
-            <h1 class="main">
-                HOW<br> IT WORKS
-            </h1>
-            <h1 class="shadow">
-                HOW<br> IT WORKS
-            </h1>
+        <div class="hiw-col">
+            <div class="hiw-row">
+                <h1 class="main row-item">
+                    HOW<br> IT WORKS
+                </h1>
+            </div>
+            <div class="hiw-row row-img-vector-1">
+                <img src="img/hiw-vector-1.png" alt="" class="hiw-vector-1">
+            </div>
         </div>
-        <img src="img/hiw-vector-2.png" class="hiw-vector-2" alt="">
-        <div class="create-mission">
-            <h1>
-                CREATE MISSION
-            </h1>
-            <p>
-                Create and ask question-based missions to 
-                boost creative & collaborative open-ended responses. 
-                There are multiple choice questions, learning journeys and 
-                collaborations.
-            </p>
-        </div>
-        <img src="img/hiw-vector-3.png" alt="" class="hiw-vector-3">
-        <div class="share-mission">
-            <h1>
-                SHARE
-            </h1>
-            <p>
-                Share missions with anyone. 
-                Only people with a special code will be able to enter a classroom and complete the missions.
-            </p>
-        </div>
-        <img src="img/hiw-vector-4.png" alt="" class="hiw-vector-4">
-        <div class="hiw-dave">
-            <img src="img/hiw-dave.png" alt="" class="">
+        <div class="hiw-row">
+            <div class="hiw-col">
+                <div class="col-item">
+                    <img src="img/hiw-vector-3.png" alt="">
+                </div>
+                <div class="col-item create-mission">
+                    <h1>
+                        CREATE MISSION
+                    </h1>
+                    <p>
+                        Create and ask question-based missions to 
+                        boost creative & collaborative open-ended responses. 
+                        There are multiple choice questions, learning journeys and 
+                        collaborations.
+                    </p>
+                </div>
+            </div>
+            <div class="hiw-row">
+                <div class="hiw-col">
+                    <div class="col-item share-mission">
+                        <h1>
+                            SHARE
+                        </h1>
+                        <p>
+                            Share missions with anyone. 
+                            Only people with a special code will be able to enter a classroom and complete the missions.
+                        </p>
+                    </div>
+                    <div class="col-item dave-image">
+                        <img src="img/hiw-dave.png" alt="">
+                    </div>
+                    <div class="col-vector-dave">
+                        <img src="img/hiw-vector-1.png" class="hiw-vector-bridge" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -105,17 +114,25 @@
     <!-- Respond -->
 
     <div class="respon">
-        <img src="img/hiw-vector-4-continue.png" alt="" class="hiw-vector-4-continue">
-        <h1>
-            RESPOND
-        </h1>
-        <p>
-            Once it is live, just watch the magic unfold and receive unique responses. 
-            Watch students solve problems in a collaborative learning environment that inspires their creativity.
-        </p>
-        <img src="img/respon-1.png" alt="" class="respon-1">
-        <img src="img/respon-2.png" alt="" class="respon-2">
-        <img src="img/respon-3.png" alt="" class="respon-3">
+        <div class="respon-row respon-row-img">
+            <img src="img/respon-1.png" alt="" class="respon-img-1">
+            <img src="img/respon-2.png" alt="" class="respon-img-2">
+            <img src="img/respon-3.png" alt="" class="respon-img-3">
+        </div>
+        <div class="respon-row">
+            <img src="img/respon-row-img.png" alt="">
+        </div>
+        <div class="respon-row">
+            <h1>
+                RESPOND
+            </h1>
+            <p>
+                Once it is live, just watch the magic unfold and receive unique responses. 
+                Watch students solve problems in a collaborative learning environment that inspires their creativity.
+            </p>
+        </div>
+        <!-- <img src="img/hiw-vector-4-continue.png" alt="" class="hiw-vector-4-continue">
+         -->
     </div>
 
     <!-- End Respond -->
@@ -124,12 +141,20 @@
     <!-- Grade -->
 
     <div class="grade">
-        <img src="img/hiw-vector-5.png" alt="" class="hiw-vector-5">
-        <h1>GRADE</h1>
-        <p>
-            Teachers will be able to review the missions and adjust the points accordingly. There is a leaderboard connected to Let’s Flip Private classroom to make it gamified and able to track learning progress
-        </p>
-        <img src="img/grading-phone.png" alt="" class="grading-phone">
+        <div class="grade-col grade-col-vector">
+            <img src="img/hiw-vector-5.png" alt="" class="hiw-vector-5">
+        </div>
+        <div class="grade-col">
+            <div class="grade-row">
+                <h1>GRADE</h1>
+                <p>
+                    Teachers will be able to review the missions and adjust the points accordingly. There is a leaderboard connected to Let’s Flip Private classroom to make it gamified and able to track learning progress
+                </p>
+            </div>
+            <div class="grade-row">
+                <img src="img/grading-phone.png" alt="" class="grading-phone">
+            </div>
+        </div>
     </div>
 
     <!-- End Grade -->
@@ -138,28 +163,35 @@
     <!-- Request Access -->
 
     <div class="request-access">
-        <p>
-            Private Classroom missions will be similar to public classroom missions
-        </p>
-        <h2>
-            This time, however, it will be a private space that will be ideal for schools and educators.
-        </h2>
-        <img src="img/request-access.png" alt="">
+        <div class="ra-col">
+            <p>
+                Private Classroom missions will be similar to public classroom missions
+            </p>
+        </div>
+        <div class="ra-col">
+            <h2>
+                This time, however, it will be a private space that will be ideal for schools and educators.
+            </h2>
+        </div>
+        <div class="ra-col">
+            <img src="img/request-access.jpg" alt="" class="ra-img">
+        </div>
     </div>
-
     <!-- End Request Access -->
 
     <!-- Persuade -->
 
     <div class="persuade">
-        <p>
-            Contents for Private missions can be curated with personalized learning to engage every student.
-            <br/>
-            Upgrade to Private Classroom for only $2.99 USD per account. 
-        </p>
-        <a href="">
-            <button>Learn More</button>
-        </a>
+        <div class="persuade-col">
+            <p>
+                Contents for Private missions can be curated with personalized learning to engage every student.
+                <br/>
+                Upgrade to Private Classroom for only $2.99 USD per account. 
+            </p>
+            <a href="">
+                <button>Upgrade Now</button>
+            </a>
+        </div>
     </div>
 
     <!-- end Persuade -->

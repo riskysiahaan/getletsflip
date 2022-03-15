@@ -3,50 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="icon" href="img/logo.png">
     <title>Welcome to Let's Flip</title>
 </head>
 <body>
 
-
+    
     <!-- Navbar -->
 
-    <!-- 
-        <div class="container mobile-flex">
-            <nav class="nav-group">
-            </nav>
-        </div>
-     -->
-
     <div class="navbar">
-        <div class="navbar-item">
-            <a class="logo" href="#">
-                <img src="img/logo.png" alt="" class="logo flex-row">
-            </a>
-        </div>
-        <div class="navbar-item">
-            <ul>
-                <li class="nav-item active"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="privateclassroom.html">Private Classroom</a></li>
-                <li class="nav-item"><a href="masterclassroom.html">Master Classroom</a></li>
-                <li class="nav-item"><a href="meettheteam.html">Meet The Team</a></li>
-                <li class="nav-item"><a href="#">Rewards</a></li>
-                <li class="nav-item"><a href="#">Partners</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="nav-item hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <div class="navbar-item">
-            <a href="https://play.google.com/store/apps/details?id=com.lets_flip">
-                <button class="flex-row">Download Now</button>
-            </a>
-        </div>
+        <a href="" class="logo"><img src="img/logo.png" alt=""></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privateclassroom.html">Private Classroom</a></li>
+          <li><a href="masterclassroom.html">Master Classroom</a></li>
+          <li><a href="#">Meet The Team</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href=""><button>Download Now</button></a></li> 
+        </ul>
     </div>
 
     <!-- End Navbar -->
@@ -127,7 +107,7 @@
     <!-- Ask a Question -->
 
     <div class="container ask-a-question">
-        <div class="ask-a-question-item-row">
+        <div class="ask-a-question-item-row ask-a-question-weird-image">
             <img src="img/Vector.png" alt="">
             <img class="vector-a-question" src="img/Group 55.png" alt="">
         </div>
@@ -138,10 +118,10 @@
                 </h1>
             </div>
             <div class="ask-a-question-col-2">
-                <p>
+                <p class="par-1">
                     Create and ask question-based missions about any topics you are interested in or use it as a safe space to let your voices be heard.
                 </p>
-                <p>
+                <p class="par-2">
                     Receive unique responses, challenge and beat the leaderboard in Classrooms against other users’ missions from around the world.
                 </p>
             </div>
@@ -238,14 +218,12 @@
                     </p>
                 </div>
             </div>
-            <div class="footer-col">
-                <div class="button-learn-more">
+            <div class="footer-col button-footer">
                     <a href="">
                         <button>
                             Learn More!
                         </button>
                     </a>
-                </div>
             </div>
             <div class="footer-col">
                 <div class="footer-col-item">
