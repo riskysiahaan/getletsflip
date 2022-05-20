@@ -1396,6 +1396,70 @@ a{
             width: 30vw;
         }
 
+        /* Through Let'sFlip */
+        .through-lets-flip{
+            width: 100vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            background: url(../img/through-letsflip-journey-background.png);
+        }
+
+        .tlf-col-mobile-image img{
+            display: none;
+        }
+
+        .tlf-col{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tlf-col p{
+            margin-top: -105px;
+            margin-bottom: 20px;
+        }
+
+        .tlf-col h1{
+            width: 80vw;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 80px;
+            line-height: auto;
+            /* or 81% */
+
+            text-align: center;
+            letter-spacing: -0.015em;
+            text-transform: uppercase;
+
+            background: linear-gradient(93.74deg, #F0512A 20.18%, #AF067D 71.53%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tlf-col p{
+            width: 90vw;
+            height: auto;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: auto;
+            text-align: center;
+            letter-spacing: -0.015em;
+
+            color: #000000;
+        }
 
         /* Request Access */
         .request-access{
@@ -2143,9 +2207,13 @@ a{
             padding-left: 50px;
             margin-right: 50px;
             padding-right: 50px;
+            margin-bottom: 50px;
         }
 
         .team-row{
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 25%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -2153,7 +2221,8 @@ a{
         }
 
         .team-row-4{
-            margin-top: 40px;
+            width: 80vw;
+            margin: auto;
             padding-top: 14px;
             display: flex;
         }
@@ -2168,6 +2237,29 @@ a{
             max-width: 100%;
         }
 
+        .img-face:hover img{
+            opacity: 1;
+            -webkit-animation: flash 1.5s;
+            animation: flash 1.5s;
+        }
+
+        @-webkit-keyframes flash {
+            0% {
+                opacity: .4;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes flash {
+            0% {
+                opacity: .4;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         .team-detail-col h3{
             width: 295px;
             margin-top: 20px;
@@ -2177,10 +2269,10 @@ a{
             font-family: Montserrat;
             font-style: normal;
             font-weight: 800;
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 30px;
+            line-height: auto;
             letter-spacing: -0.015em;
-
+            text-align: center;
             color: #000000;
         }
 
@@ -2189,7 +2281,6 @@ a{
             height: 18px;   
             margin-bottom: 7px;
             padding-bottom: 10px;
-
             font-family: Montserrat;
             font-style: normal;
             font-weight: 600;
@@ -2197,14 +2288,15 @@ a{
             line-height: 18px;
             letter-spacing: -0.015em;
             color: rgba(252, 82, 41, 1);
+            text-align: center;
         }
 
         .team-detail-col p{
             text-align: center;
-            width: 100%;
-            height: 162px;
-            margin-bottom: 32px;
-            padding-bottom: 20px;
+            width: 80%;
+            height: auto;
+            margin: auto;
+            margin-bottom: 20px;
 
             font-family: Montserrat;
             font-style: normal;
@@ -2222,12 +2314,22 @@ a{
         }
 
         .icon-item{
+            cursor: pointer;
             margin: 5px;
+        }
+
+        .icon-item img{
+            opacity: 1;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .icon-item:hover img{
+            opacity: .5;
         }
     }
 
     .mtt-footer-cover{
-        position: absolute;
         width: 100vw;
         height: 580px;
         left: 0px;
@@ -2321,254 +2423,255 @@ a{
 
 
     /* Partner Page */
-    .partner-header{
-        width: 100vw;
-        height: 667px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: linear-gradient(101.22deg, #FC5229 1.22%, #AF067D 202.34%);
-    }
+    @media (min-width:1025px) {
+        .partner-header{
+            width: 100vw;
+            height: 667px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(101.22deg, #FC5229 1.22%, #AF067D 202.34%);
+        }
 
-    .partner-header img{
-        max-width: 100%;
-    }
+        .partner-header img{
+            max-width: 100%;
+        }
 
-    .partner-header h1{
-        width: 962px;
-        height: 98px;
+        .partner-header h1{
+            width: 962px;
+            height: 98px;
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 80px;
-        line-height: 98px;
-        /* identical to box height */
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 80px;
+            line-height: 98px;
+            /* identical to box height */
 
-        text-align: right;
-        letter-spacing: -0.02em;
+            text-align: right;
+            letter-spacing: -0.02em;
 
-        color: #FFFFFF;
-    }
+            color: #FFFFFF;
+        }
 
-    .partner-header p{
-        width: 1078px;
-        height: 24px;
+        .partner-header p{
+            width: 1078px;
+            height: 24px;
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: -0.015em;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.015em;
 
-        color: #FFFFFF;
-    }
-
-
-    /* Brand Partner */
-    .brand-partner{
-        width: 100vw;
-        height: 622px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .brand-partner-row{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .brand-partner-col{
-        margin-top: 20px;
-        margin-left: 56px;
-        padding-left: 40px;
-        margin-right: 20px;
-    }
-
-    .brand-partner h1{
-        height: 65px;
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 70px;
-        line-height: 65px;
-        /* identical to box height, or 93% */
-
-        text-align: left;
-        letter-spacing: -0.015em;
-
-        color: #000000;
-    }
-
-    .brand-partner p{
-        height: 123px;
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: -0.015em;
-
-        color: #000000;
-    }
-    
-    .brand-partner button{
-        width: 156px;
-        height: 46px;
-        cursor: pointer;
-
-        border-radius: 8px;
-        border: 2px solid transparent;
-        font-family: Montserrat;
-        font-style: normal;
-        background: #ffffff;
-        border: 2px solid #FC5229;
-    }
+            color: #FFFFFF;
+        }
 
 
-    /* Learning Partner */
-    .learning-partner{
-        width: 100vw;
-        height: 608px;
+        /* Brand Partner */
+        .brand-partner{
+            width: 100vw;
+            height: 622px;
+            display: flex;
+            justify-content: center;
+        }
 
-        background: linear-gradient(270deg, #FFEEEA 48.16%, rgba(255, 238, 234, 0) 81.62%);
-        display: flex;
-    }
+        .brand-partner-row{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
 
-    .learning-partner-background-fade{
-        position: absolute;
-        width: 100vw;
-        height: 608px;
-        left: 0px;
-        top: 1362px;
+        .brand-partner-col{
+            margin-top: 20px;
+            margin-left: 56px;
+            padding-left: 40px;
+            margin-right: 20px;
+        }
 
-        background: linear-gradient(270deg, #FFEEEA 48.16%, rgba(255, 238, 234, 0) 81.62%);
-    }
+        .brand-partner h1{
+            height: 65px;
 
-    .learning-partner img{
-        max-width: 100%;
-        z-index: -2;
-    }
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 65px;
+            /* identical to box height, or 93% */
 
-    .learning-partner-col{
-        display: flex;
-        margin-right: 50px;
-    }
+            text-align: left;
+            letter-spacing: -0.015em;
 
-    .learning-partner-row{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+            color: #000000;
+        }
 
-    .learning-partner-col h1, p, button{
-        margin-right: 20px;
+        .brand-partner p{
+            height: 123px;
 
-        z-index: 2;
-    }
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.015em;
 
-    .learning-partner-col button{
-        width: 156px;
-        height: 46px;
-        cursor: pointer;
+            color: #000000;
+        }
+        
+        .brand-partner button{
+            width: 156px;
+            height: 46px;
+            cursor: pointer;
 
-        border-radius: 8px;
-        border: 2px solid transparent;
-        font-family: Montserrat;
-        font-style: normal;
-        background: linear-gradient(270deg, #FFEEEA 48.16%, rgba(255, 238, 234, 0) 81.62%);
-        border: 2px solid #FC5229;
-        margin-left: 23vw;
-    }
+            border-radius: 8px;
+            border: 2px solid transparent;
+            font-family: Montserrat;
+            font-style: normal;
+            background: #ffffff;
+            border: 2px solid #FC5229;
+        }
 
-    .learning-partner h1{
-        height: 65px;
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 60px;
-        line-height: 65px;
-        /* identical to box height, or 93% */
+        /* Learning Partner */
+        .learning-partner{
+            width: 100vw;
+            height: 608px;
 
-        text-align: right;
-        letter-spacing: -0.015em;
+            background: linear-gradient(270deg, #FFEEEA 48.16%, rgba(255, 238, 234, 0) 81.62%);
+            display: flex;
+        }
 
-        color: #000000;
-    }
+        .learning-partner-background-fade{
+            position: absolute;
+            width: 100vw;
+            height: 608px;
+            left: 0px;
+            top: 1362px;
 
-    .learning-partner-button-relative{
-        position: relative;
-    }
+            background: linear-gradient(270deg, #FFEEEA 48.16%, rgba(255, 238, 234, 0) 81.62%);
+        }
 
-    .learning-partner p{
-        width: 514px;
-        height: 161px;
+        .learning-partner img{
+            max-width: 100%;
+            z-index: -2;
+        }
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 24px;
-        text-align: right;
-        letter-spacing: -0.015em;
+        .learning-partner-col{
+            display: flex;
+            margin-right: 50px;
+        }
 
-        color: #000000;
-    }
+        .learning-partner-row{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
 
-    /* Want to know more */
-    .want-to-know{
-        width: 100vw;
-        height: 430px;
+        .learning-partner-col h1, p, button{
+            margin-right: 20px;
 
-        background: #FFFFFF;
+            z-index: 2;
+        }
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+        .learning-partner-col button{
+            width: 156px;
+            height: 46px;
+            cursor: pointer;
 
-    .want-to-know p{
-        margin: 35px;
-        padding: 15px;
-        width: auto;
-        height: 24px;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            font-family: Montserrat;
+            font-style: normal;
+            background: linear-gradient(270deg, #FFEEEA 48.16%, rgba(255, 238, 234, 0) 81.62%);
+            border: 2px solid #FC5229;
+            margin-left: 23vw;
+        }
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 24px;
-        letter-spacing: -0.015em;
+        .learning-partner h1{
+            height: 65px;
 
-        color: #000000;
-    }
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 60px;
+            line-height: 65px;
+            /* identical to box height, or 93% */
 
-    .want-to-know button{
-        margin: 35px;
-        padding: 15px;
-        width: 250px;
-        height: 75px;
-        cursor: pointer;
+            text-align: right;
+            letter-spacing: -0.015em;
 
-        border-radius: 8px;
-        border: 2px solid transparent;
-        font-family: Montserrat;
-        font-size: large;
-        font-style: normal;
-        background: linear-gradient(270deg, #ffffff 48.16%, rgba(255, 238, 234, 0) 81.62%);
-        border: 2px solid #FC5229;
+            color: #000000;
+        }
+
+        .learning-partner-button-relative{
+            position: relative;
+        }
+
+        .learning-partner p{
+            width: 514px;
+            height: 161px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: right;
+            letter-spacing: -0.015em;
+
+            color: #000000;
+        }
+
+        /* Want to know more */
+        .want-to-know{
+            width: 100vw;
+            height: 430px;
+
+            background: #FFFFFF;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .want-to-know p{
+            margin: 35px;
+            padding: 15px;
+            width: auto;
+            height: 24px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 24px;
+            letter-spacing: -0.015em;
+
+            color: #000000;
+        }
+
+        .want-to-know button{
+            margin: 35px;
+            padding: 15px;
+            width: 250px;
+            height: 75px;
+            cursor: pointer;
+
+            border-radius: 8px;
+            border: 2px solid transparent;
+            font-family: Montserrat;
+            font-size: large;
+            font-style: normal;
+            background: linear-gradient(270deg, #ffffff 48.16%, rgba(255, 238, 234, 0) 81.62%);
+            border: 2px solid #FC5229;
+        }
     }
 
     /* Footer */
 
     .partner-footer-cover{
-        position: absolute;
         width: 100vw;
         height: 580px;
         left: 0px;
@@ -2658,3 +2761,94 @@ a{
     .partner-footer img{
         max-width: 100%;
     }
+
+      
+/* Privacy Policy */
+.privacy{
+    width: 100%;
+    height: auto;
+}
+
+.privacy-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.privacy-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy-title h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 78px;
+    letter-spacing: -0.015em;
+
+    color: #000000;
+}
+
+.privacy-section{
+    margin:2vw 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.privacy-section p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+    letter-spacing: -0.015em;
+
+    color: #000000;
+}
+
+.privacy-section li{
+    margin-top: 1.2vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+    letter-spacing: -0.015em;
+
+    color: #000000;
+}
+
+.privacy-title{
+    margin-top: 4vw;
+}
+
+.privacy-section h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 78px;
+    letter-spacing: -0.015em;
+
+    color: #000000;
+}
+
+.privacy-section h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 78px;
+    letter-spacing: -0.015em;
+
+    color: #000000;
+}
